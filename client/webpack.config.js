@@ -8,7 +8,7 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return {
-    mode: 'production',
+    mode: 'development',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
@@ -30,8 +30,8 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'J.A.T.E.',
-        description: 'got your notes here!',
+        short_name: 'JATE',
+        description: 'got your text here!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
